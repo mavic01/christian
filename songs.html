@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="images/music-logo.jpg" type="image/icon type">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Music</title>
+    
+    <style>
+            body {
+                height: 100vh;
+                margin: 0;
+                font-family: 'Lato', sans-serif;
+                background:rgb(63, 46, 62) 92% ;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+
+            #container{
+                height: 100vh;
+                width: 100%;
+                background:rgb(63, 46, 62) 92% 
+                    ;
+        
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                align-items: center;
+            }
+
+            #container li{
+                /* list-style-type: none; */
+                text-decoration: none;
+                color: rgb(85, 60, 7);
+                font-size: 1.5em;
+                cursor: pointer;
+                padding-bottom: 12px;
+            }
+
+            h1 {
+                    color: rgb(206, 13, 180);
+                    animation: fadecolor 1s infinite;
+                }
+                @keyframes fadecolor {
+                    from {color: rgb(206, 13, 180) } 
+                    to {color: rgb(4, 87, 90)}
+            }
+            h1 {
+                position: relative;
+                left: 40px;
+                margin-top: 1.5em;
+            }
+
+            
+
+            /* a {
+                
+                font-size: 20px;
+                text-decoration: none;
+                color:#fff;
+                background-color: #055C9D;
+                border-radius: 10px;
+                padding: .3em;
+                box-shadow: 0 20px 20px 0 rgba(2, 78, 40, 0.6);
+                position: relative;
+                top: 20px;
+            }*/
+                
+                .btn {
+                    background: #3F2E3E;
+                    background-image: -webkit-linear-gradient(top, #3F2E3E, #0f080e);
+                    background-image: -moz-linear-gradient(top, #3F2E3E, #0f080e);
+                    background-image: -ms-linear-gradient(top, #3F2E3E, #0f080e);
+                    background-image: -o-linear-gradient(top, #3F2E3E, #0f080e);
+                    background-image: linear-gradient(to bottom, #3F2E3E, #0f080e);
+                    -webkit-border-radius: 28;
+                    -moz-border-radius: 28;
+                    border-radius: 10px;
+                    text-shadow: 1px 1px 3px #c94ec9;
+                    font-family: Arial;
+                    color: #dfdada;
+                    font-size: 20px;
+                    padding: 8px 12px 8px 12px;
+                    text-decoration: none;
+                    position: relative;
+                    top: 20px;
+                    border: 2px solid black;
+                }
+                
+                .btn:hover {
+                    background: #3F2E3E;
+                    background-image: -webkit-linear-gradient(top, #3F2E3E, #652b61);
+                    background-image: -moz-linear-gradient(top, #3F2E3E, #652b61);
+                    background-image: -ms-linear-gradient(top, #3F2E3E, #652b61);
+                    background-image: -o-linear-gradient(top, #3F2E3E, #652b61);
+                    background-image: linear-gradient(to bottom, #3F2E3E, #652b61);
+                    text-decoration: none;
+                    color: white;
+                }
+
+
+                .link {
+                    text-align: center;
+                }
+                .bubbles img{
+                    width: 50px;
+                    animation: bubble 7s linear infinite;
+                }
+                .bubbles{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    position: absolute;
+                    bottom: -70px;
+                }
+
+                @keyframes bubble {
+                    0%{
+                        transform: translateY(0);
+                        opacity: 0;
+                        }
+                    50%{
+                    opacity: 1;
+                        }
+                    70%{
+                    opacity: 1;
+                        }
+                    100%{
+                    transform: translateY(-80vh);
+                    opacity: 0;
+                }
+                }
+
+                .bubbles img:nth-child(1){
+                    animation-delay: 2s;
+                    width: 30px;
+                }
+                .bubbles img:nth-child(2){
+                    animation-delay: 1s;
+                }
+                .bubbles img:nth-child(3){
+                    animation-delay: 3s;
+                    width: 30px;
+                }
+                .bubbles img:nth-child(4){
+                    animation-delay: 4.5s;
+                }
+                .bubbles img:nth-child(5){
+                    animation-delay: 3s;
+                }
+                .bubbles img:nth-child(6){
+                    animation-delay: 6s;
+                    width: 25px;
+                }
+                .bubbles img:nth-child(7){
+                    animation-delay: 7s;
+                }
+                .bubbles img:nth-child(8){
+                    animation-delay: 8s;
+                    width: 40px;
+                }
+                .liClass {
+                    display: flex;
+                    background-color: gray;
+                    margin-bottom: 10px;
+                    padding: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 10px;
+                }
+                .aClass {
+                    background-color: #3F2E3E;
+                    padding: 7px;
+                    text-decoration: none;
+                    border: 2px solid rgb(45, 45, 45);
+                    border-radius: 10px;
+                    font-size: 15px;
+                    color: white;
+                }
+                .aClass:hover {
+                    background-color: antiquewhite;
+                    color: #3F2E3E;
+                }
+                @media  screen and (max-width: 480px) {
+                    .liClass {
+                        font-size: 10px;
+                    }
+                }
+        
+            </style>
+
+</head>
+<body>
+    <!-- <div class="link"><a href="index.html">Home</a></div> -->
+    
+    <div id="container">
+        <div class="link"><a href="index.html" class="btn"><i>Home</i></a></div>
+        <h1>Song List</h1>
+
+        <div class="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+            <img src="images/bubble.png" alt="bubbles">
+        </div>
+        
+    </div>
+
+
+<script>
+const songs = ["Anne Marie David - Be Merciful", "Dahter - Be careful what you reach for when you feel insignificant", "Dahter - When your environment doesnt match your true identity", "Dåhter - I will show you whats from Me. He is faithful", "Dahter - Did I hear from God or were those my thoughts", "Dahter - How did I get here in my thoughts", "Dahter - Loving those who hurt me", "Dahter - Curious to know whats on the other side of His Word_", "Dahter - Your life was well planned", "Dahter - Discernment_ What is He saying_!", "Dåhter - When you feel life is suffocating you. God felt that too"]
+    songs.sort()
+
+    const cont = document.getElementById('container') 
+    const ul = document.createElement('ul')
+    ul.setAttribute('id', 'theList')
+    for (i = 0; i < songs.length; i++){
+        const anchor = document.createElement('a')
+        anchor.href = `music/${songs[i]}.mp3`
+        anchor.setAttribute("download", "")
+        anchor.classList.add("aClass")
+        anchor.innerText = "Download"
+
+        const li = document.createElement('li')
+        li.setAttribute('id', 'itemsss')
+        li.innerHTML = songs[i]
+        li.classList.add("liClass")
+
+        li.appendChild(anchor)
+        ul.appendChild(li)
+    }
+    cont.appendChild(ul)
+
+
+
+
+//     document.addEventListener('click', function(e){
+//     if(e.target && e.target.id== 'itemsss'){
+         
+//     }
+// });
+//==========================================
+</script>
+</body>
+</html>
