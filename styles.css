@@ -9,10 +9,11 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-image: linear-gradient(0deg,
-    rgb(247, 247, 247) 23.8%,     
-    rgb(63, 46, 62) 92%     
-    );
+    background-image: linear-gradient(
+    0deg,
+    rgb(211, 207, 215) 23.8%,
+     rgb(22, 20, 25) 92%
+     );
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,11 +22,10 @@ body {
 }
 
 body.dark{
-    background-image: linear-gradient(
-        0deg,
-        rgb(211, 207, 215) 23.8%,
-     rgb(22, 20, 25) 92%
-     );
+    background-image: linear-gradient(0deg,
+    rgb(247, 247, 247) 23.8%,     
+    rgb(63, 46, 62) 92%     
+    );
 }
 
 h1 {
