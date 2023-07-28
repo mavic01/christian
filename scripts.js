@@ -14,7 +14,7 @@ const checkbox = document.querySelector('#checkbox')
 
 
 //song titles
-const songs = ["Anne Marie David - Be Merciful", "Dahter - Be careful what you reach for when you feel insignificant", "Dahter - When your environment doesnt match your true identity", "Dåhter - I will show you whats from Me. He is faithful", "Dahter - Did I hear from God or were those my thoughts", "Dahter - How did I get here in my thoughts", "Dahter - Loving those who hurt me", "Dahter - Curious to know whats on the other side of His Word_", "Dahter - Your life was well planned", "Dahter - Discernment_ What is He saying_!", "Dåhter - When you feel life is suffocating you. God felt that too", "Dahter - He's Removing False Confidence", "Dahter (Unraveled) - You have the FULL attention of your FATHER", "Dahter - Scarcity Mindset with God", "Dahter - Will you give Me those limiting words you've collected", "Dahter - Stay, so you witness the capacity of My character", "Dahter - When you have nothing left to give", "Dahter - When you struggle with comparison and insecurity", "Dahter - When it gets darker after following God", "Dåh_ter  (Deanna Lorea) - Rest in My INEVITABLE direction", "Dahter - When He makes you lie down in green pastures"]
+const songs = ["Anne Marie David - Be Merciful", "Dahter - When you feel like God is playing games with you", "Dåhter - Your grass is the greenest #greenpastures", "Dahter - When anxiety comes and you dont feel safe anywhere", "Dahter  (Deanna Lorea ~Unraveled) - We arent we of ONE mind right now", "Dahter - Knowledge does not equal security in Me", "Dahter - I want to make My home with you", "Dahter - What happens when you wait on God but nothing happens", "Dahter - Proving our love to God", "Dahter - When you try to MIMIC Bible characters lives  Talks with Yahweh", "Dahter  (Deanna Lorea) - The REST youre looking for lies in your FAITH  Talks with Yahweh", "Dahter - When you feel like God is quiet in your life", "Dahter - Be careful what you reach for when you feel insignificant", "Dahter - When your environment doesnt match your true identity", "Dåhter - I will show you whats from Me. He is faithful", "Dahter - Did I hear from God or were those my thoughts", "Dahter - How did I get here in my thoughts", "Dahter - Loving those who hurt me", "Dahter - Curious to know whats on the other side of His Word_", "Dahter - Your life was well planned", "Dahter - Discernment_ What is He saying_!", "Dåhter - When you feel life is suffocating you. God felt that too", "Dahter - He's Removing False Confidence", "Dahter (Unraveled) - You have the FULL attention of your FATHER", "Dahter - Scarcity Mindset with God", "Dahter - Will you give Me those limiting words you've collected", "Dahter - Stay, so you witness the capacity of My character", "Dahter - When you have nothing left to give", "Dahter - When you struggle with comparison and insecurity", "Dahter - When it gets darker after following God", "Dåh_ter  (Deanna Lorea) - Rest in My INEVITABLE direction", "Dahter - When He makes you lie down in green pastures"]
 
 checkbox.addEventListener('change', () => {
     //change website theme
@@ -67,8 +67,8 @@ function prevSong(){
 
 function nextSong(){
     songIndex++
-    if(songIndex > 20){
-        songIndex = songs.length - 21
+    if(songIndex > 31){
+        songIndex = songs.length - 32
     }
     loadSong(songs[songIndex])
 
